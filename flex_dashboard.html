@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex dash board</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:red;
+            height: 60px;
+            color: aquamarine;
+            padding: 10px;
+
+        }
+
+        .Nav {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .Nav a {
+            color:pink;
+            text-decoration: none;
+
+
+        }
+
+        footer {
+            background-color:rgb(162,125,44);
+            text-align: center;
+            padding: 15px;
+            height: 100px;
+        }
+
+        .middle-content {
+            flex: 1;
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: yellow;
+            padding: 20px;
+            width: 300px;
+
+        }
+
+        .button {
+            margin-bottom: 30px;
+            display: block;
+            width: auto;
+            color:red;
+            background-color: yellow;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50px;
+            
+
+        }
+
+        .main {
+
+            flex: 1;
+            padding:20px;
+            background-color: rgb(214, 162, 192);
+        }
+
+        marquee {
+            background-color: aquamarine;
+            height: 35px;
+            font-weight: bold;
+            position: relative;
+            width: 100%;
+
+        }
+        iframe{
+          
+height: 100%;
+width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">MY LOGO</div>
+        <h1> TEKS ACADEMY</h1>
+        <div class="Nav">
+            <a href="Home">Home</a>
+            <a href="About">About</a>
+            <a href="Login">Login</a>
+        </div>
+    </header>
+    <div class="middle-content">
+        <aside class="sidebar">
+            <button class="button"><a href="inline .html" target="content-frame"> profile</a></button>
+            <button class="button"><a href="Achievement.html" target="content-frame">Achivement</a></button>
+            <button class="button"><a href="MAQUEE.HTML" target="content-frame">Marquee</a></button>
+            <button class="button">Logout</button>
+        </aside>
+        <main class="main"><iframe name="content-frame" src="inline .html"></iframe></main>
+
+
+    </div>
+    </div>
+    <footer>FOOTER</footer>
+</body>
+
+</html>
